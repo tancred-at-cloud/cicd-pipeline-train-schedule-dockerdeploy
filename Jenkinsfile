@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("tancred-at-cloud/train-schedule")
+                    app = docker.build("tancredi233/train-schedule")
                     app.inside {
                         sh 'echo $( curl localhost:8080 )'
                     }
